@@ -11,10 +11,13 @@
 
 #include <stdbool.h>
 
-int* changeValue(const int* p);
+int* ChangeValue(const int* p);
 int* Maior(int* p, int* q);
-int get(int* ptr);
+bool MaiorII(int x, int y, int* maior);
+int Get(int* ptr);
 bool ExisteValorPosicao(int v[], int n, int valor, int* pos);
+void TrocaII(int* x, int* y);
+void Troca(int x, int y);
 
 #define N 20
 typedef struct Pessoa {

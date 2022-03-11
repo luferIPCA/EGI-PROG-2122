@@ -9,7 +9,7 @@
 /**
 * Tentar alterar valor de um parâmetro "const"...não é permitido!
 */
-int* changeValue(const int* p) {
+int* ChangeValue(const int* p) {
 	//*p = *p + 1;		//não é permitido pois é const
 	return p;
 }
@@ -27,7 +27,7 @@ int* Maior(int* p, int* q) {
 * Verifica qual o maior entre dois elementos
 * Indica se são ou nnão diferentes!
 */
-bool Maior(int x, int y, int* maior) {
+bool MaiorII(int x, int y, int* maior) {
 
 	if (x > y) {
 		*maior = x;
@@ -68,8 +68,27 @@ bool ExisteValorPosicao(int v[], int n, int valor, int* pos) {
 /**
 * Analisar!!!! Qual o problema?
 */
-int get(int* ptr) {
+int Get(int* ptr) {
 	int a = 10;
 	ptr = &a;
 	return 0;
+}
+/*A variável "a" desaparece após a execução da função*/
+
+/**
+* Tenta trocar...não consegue!
+*/
+void Troca(int x, int y) {
+	int t = x;
+	x = y;
+	y = t;
+}
+
+/**
+* Consegue trocar
+*/
+void TrocaII(int* x, int* y) {
+	int t = *x;
+	*x = *y;
+	*y = t;
 }
