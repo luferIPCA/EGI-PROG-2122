@@ -14,11 +14,11 @@
  * @bug bugs desconhecidos.
 */
 
-#ifndef MAQUINA
+#ifndef DEFINICOESMAQUINAS
 
 #include <stdio.h>
 
-#define M 40
+#define M 50
 typedef struct Maquina {
 	int cod;
 	char nome[M];
@@ -26,9 +26,9 @@ typedef struct Maquina {
 }Maquina;
 
 //cria nova maquina
-Maquina* CriaMaquina(int novoCod, char* novoNome);
-Maquina* InsereMaquina(Maquina* h, Maquina* nova);
+Maquina* CriaMaquina(int novoCod, char *novoNome);
+Maquina* InsereMaquina(Maquina* inicio, Maquina* nova);
 
 
-#define MAQUINA 
+#define DEFINICOESMAQUINAS 1 
 #endif

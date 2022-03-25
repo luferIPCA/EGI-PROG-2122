@@ -17,8 +17,6 @@
 #include "Dados.h"
 #include "Maquinas.h"
 
-
-
 int main() {
 
 	Maquina* inicoLista;	
