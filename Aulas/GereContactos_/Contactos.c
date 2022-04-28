@@ -9,16 +9,9 @@
 */
 
 #include "Contatos.h"
-#include "Pessoa.h"
-#include <stdbool.h>
 
 /**
- * @brief .
- * 
- * @param desc
- * @param valor
- * @return 
- */
+*/
 Contacto* CriaContacto(char* desc, char* valor) {
 	Contacto* aux = (Contacto*)calloc(1, sizeof(Contacto));
 	strcpy(aux->desc, desc);
@@ -36,7 +29,7 @@ ListaContactos* CriaNodoListaContactos(Contacto* c) {
 	ListaContactos* novo = (ListaContactos*)calloc(1, sizeof(ListaContactos));
 	strcpy(novo->contacto.desc, c->desc);
 	strcpy(novo->contacto.valor, c->valor);
-	novo->proxContacto = NULL;
+	novo->prox = NULL;
 	return novo;
 }
 
@@ -50,7 +43,7 @@ ListaContactos* InsereContactoListaContactos(ListaContactos* h, Contacto* novoCo
 	if (h == NULL) h = novo;		//se lista está vazia
 	else {
 		//Assumir que se insere sempre no inicio
-		novo->proxContacto = h;
+		novo->prox = h;
 		h = novo;
 	}
 	return h;
@@ -62,8 +55,7 @@ void MostraContactos(ListaContactos* h) {
 	ListaContactos* aux = h;
 	while (aux) {
 		printf("Contacto: %s - Valor: %s\n", aux->contacto.desc, aux->contacto.valor);
-		aux = aux->proxContacto;
+		aux = aux->prox;
 	}
 
 }
-

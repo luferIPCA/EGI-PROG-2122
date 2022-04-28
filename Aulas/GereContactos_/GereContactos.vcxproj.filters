@@ -29,16 +29,8 @@
     <ClCompile Include="Pessoas.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main.c">
+    <ClCompile Include="GereContactos.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Dados.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
   </ItemGroup>
 </Project>

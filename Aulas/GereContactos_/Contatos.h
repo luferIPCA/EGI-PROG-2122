@@ -8,15 +8,11 @@
  * @bug No known bugs.
 */
 #pragma once
-#pragma warning( disable : 4996 ) //evita MSG ERROS: _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
-#include <stdbool.h>
 
 #define M 40
 #define N 40
-
-#pragma region GereContactos
 
 typedef struct Contacto {
 	char desc[M];		/**< designação do contacto. ex: Telefone*/
@@ -25,13 +21,11 @@ typedef struct Contacto {
 
 typedef struct ListaContactos {
 	struct Contacto contacto;
-	struct ListaContactos* proxContacto;
+	struct ListaContactos* prox;
 }ListaContactos;
-
 
 Contacto* CriaContacto(char* desc, char* valor);
 void MostraContactos(ListaContactos* h);
 ListaContactos* InsereContactoListaContactos(ListaContactos* h, Contacto* novo);
 ListaContactos* CriaNodoListaContactos(Contacto* c);
 
-#pragma endregion
