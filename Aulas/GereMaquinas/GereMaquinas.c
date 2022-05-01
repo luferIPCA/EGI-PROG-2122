@@ -17,15 +17,20 @@
 #include "Dados.h"
 #include "Maquinas.h"
 
+
+
 int main() {
 
-	Maquina* inicoLista;	
-	inicoLista= NULL;
+	Maquina* inicioLista;	
+	inicioLista= NULL;
 
-	Maquina* x = CriaMaquina(12, "Corte");
-	inicoLista = InsereMaquina(inicoLista, x);
+	Maquina* nova;
+	nova= CriaMaquina(12, "Corte");
+	inicioLista = InsereMaquina(inicioLista, nova);
 
-	x = CriaMaquina(13, "Pintar");
-	inicoLista = InsereMaquina(inicoLista, x);
+	nova = CriaMaquina(13, "Pintar");
+	inicioLista = InsereMaquina(inicioLista, nova);
+
+	int t = ContaMaquinas(inicioLista, "Pintar", &ComparaMaquinas);
 
 }

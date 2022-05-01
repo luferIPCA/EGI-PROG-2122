@@ -14,11 +14,12 @@
  * @bug bugs desconhecidos.
 */
 
-#ifndef DEFINICOESMAQUINAS
+#ifndef MAQUINA
 
 #include <stdio.h>
+#include <stdbool.h>
 
-#define M 50
+#define M 40
 typedef struct Maquina {
 	int cod;
 	char nome[M];
@@ -26,9 +27,12 @@ typedef struct Maquina {
 }Maquina;
 
 //cria nova maquina
-Maquina* CriaMaquina(int novoCod, char *novoNome);
-Maquina* InsereMaquina(Maquina* inicio, Maquina* nova);
+Maquina* CriaMaquina(int novoCod, char* novoNome);
+Maquina* InsereMaquina(Maquina* h, Maquina* nova);
+bool ComparaMaquinas(Maquina* a, Maquina* b);
+
+int ContaMaquinas(Maquina* a, char* nome, bool(*p)(void* v1, void* v2));
 
 
-#define DEFINICOESMAQUINAS 1 
+#define MAQUINA 
 #endif

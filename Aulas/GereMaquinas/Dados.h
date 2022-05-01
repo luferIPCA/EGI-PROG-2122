@@ -14,7 +14,7 @@
  * @bug bugs desconhecidos.
 */
 
-#ifndef DEFJOBS
+#ifndef HOJE
 
 #include <stdio.h>
 
@@ -27,6 +27,6 @@ typedef struct Job {
 }Job;
 
 
-#define DEFJOBS 
+#define HOJE 
 #endif
 
