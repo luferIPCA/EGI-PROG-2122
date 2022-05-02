@@ -15,19 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Funcoes.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Arrays.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Main.c">
+    <ClCompile Include="Ficheiros.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Funcoes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <Text Include="FicheiroDados.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FicheiroDados.csv">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

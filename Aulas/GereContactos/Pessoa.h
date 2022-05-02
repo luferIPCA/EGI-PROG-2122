@@ -50,7 +50,8 @@ bool SavePessoas(ListaPessoa* h, char* fileName);
 #pragma region GereListaContactos
 
 void MostraContactosPessoa(ListaPessoa* inicio, int nc);
-ListaPessoa* InsereContactoPessoa(ListaPessoa* h, Contacto* c, int nc);
+ListaPessoa* InsereContactoPessoa(ListaPessoa* h, Cont 
+	acto* c, int nc);
 
 #pragma endregion
 
