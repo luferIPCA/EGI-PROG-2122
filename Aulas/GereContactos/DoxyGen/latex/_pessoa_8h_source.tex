@@ -1,0 +1,71 @@
+\hypertarget{_pessoa_8h_source}{}\doxysection{Pessoa.\+h}
+\label{_pessoa_8h_source}\index{D:/Temp/PROG-\/EGI/Aulas/GereContactos/Pessoa.h@{D:/Temp/PROG-\/EGI/Aulas/GereContactos/Pessoa.h}}
+\mbox{\hyperlink{_pessoa_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00010}00010 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00011}00011 \textcolor{preprocessor}{\#pragma warning( disable : 4996 ) }\textcolor{comment}{//evita MSG ERROS: \_CRT\_SECURE\_NO\_WARNINGS}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00013}00013 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_contatos_8h}{Contatos.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00014}00014 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00016}\mbox{\hyperlink{_pessoa_8h_a52037c938e3c1b126c6277da5ca689d0}{00016}} \textcolor{preprocessor}{\#define M 20}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00018}00018 \textcolor{preprocessor}{\#pragma region InformaçãoMemória}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00022}\mbox{\hyperlink{struct_pessoa}{00022}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_pessoa}{Pessoa}} \{}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00023}\mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{00023}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}};           }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00024}\mbox{\hyperlink{struct_pessoa_ade7342cfcf420ca1fdfd8dbafb7873e8}{00024}}     \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_pessoa_ade7342cfcf420ca1fdfd8dbafb7873e8}{nome}}[\mbox{\hyperlink{_pessoa_8h_a52037c938e3c1b126c6277da5ca689d0}{M}}];  }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00025}\mbox{\hyperlink{_pessoa_8h_add0a458b9753bc31e316ce02c55b6ad9}{00025}} \}\mbox{\hyperlink{_pessoa_8h_add0a458b9753bc31e316ce02c55b6ad9}{Pessoa}};}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00031}\mbox{\hyperlink{struct_lista_pessoa}{00031}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}} \{}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00032}\mbox{\hyperlink{struct_lista_pessoa_a940b0db7f1a0bd362a125b27d4e4637b}{00032}}     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_pessoa}{Pessoa}} \mbox{\hyperlink{struct_lista_pessoa_a940b0db7f1a0bd362a125b27d4e4637b}{fichaPessoa}}; }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00033}\mbox{\hyperlink{struct_lista_pessoa_aa88e185653014ff26a4834dd2dd99349}{00033}}     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* \mbox{\hyperlink{struct_lista_pessoa_aa88e185653014ff26a4834dd2dd99349}{listaContactos}};  }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00034}\mbox{\hyperlink{struct_lista_pessoa_af14382f29862b4fa21b55536bc46737c}{00034}}     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{struct_lista_pessoa_af14382f29862b4fa21b55536bc46737c}{proxPessoa}};    }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00035}\mbox{\hyperlink{_pessoa_8h_a03b75fb9ca29f3a801169efb3dce0a91}{00035}} \}\mbox{\hyperlink{_pessoa_8h_a03b75fb9ca29f3a801169efb3dce0a91}{ListaPessoa}};}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00037}\mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}{00037}} \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}{CONTROLERROR}} \{}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00038}\mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fabf350750d0d4fabd8954c0f1e9bbae94}{00038}}     \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fabf350750d0d4fabd8954c0f1e9bbae94}{NO\_ERROR}} = 1,}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00039}\mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364faaa33265d2e12fe02833b6564507c7ac2}{00039}}     \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364faaa33265d2e12fe02833b6564507c7ac2}{NO\_FILE}} =45,}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00040}\mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fa2eea5458370a4b5c6c9141e58e6c2bd2}{00040}}     \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fa2eea5458370a4b5c6c9141e58e6c2bd2}{PRESIDENT}}=100,}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00041}00041     \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fad2c08fb8362bb7bc8b17aa5a6df6e498}{NO\_DATA}}=2}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00042}\mbox{\hyperlink{_pessoa_8h_ab767419d655587498e9955d3ceb3019b}{00042}} \}\mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}{CONTROLERROR}};}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00044}00044 \textcolor{preprocessor}{\#pragma region GerePessoa}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00046}00046 \mbox{\hyperlink{struct_pessoa}{Pessoa}}* \mbox{\hyperlink{_pessoa_8h_aaa166dacb2ce56eb091d135b7673fd34}{CriaLista}}();}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00047}00047 \mbox{\hyperlink{struct_pessoa}{Pessoa}}* \mbox{\hyperlink{_pessoa_8h_a290b1b3cd513897b90a245e6e4536c4f}{CriaPessoa}}(\textcolor{keywordtype}{char}* nome, \textcolor{keywordtype}{int} nc);}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00048}00048 \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoa_8h_ac8c60854cc8aba9a98e70d52d048ace2}{CriaNodoListaPessoas}}(\mbox{\hyperlink{struct_pessoa}{Pessoa}}* c);}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00049}00049 \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoa_8h_a45017a1012209f99597f42aa63cb758c}{InserePessoaListaPessoas}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h, \mbox{\hyperlink{struct_pessoa}{Pessoa}}* p);}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00050}00050 \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoa_8h_aa53e03fad61292bd149f5626dd090f41}{ProcuraPessoa}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* inicio, \textcolor{keywordtype}{int} nc);}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00051}00051 \textcolor{keywordtype}{void} \mbox{\hyperlink{_pessoa_8h_a4ecf3b5ce3d9817f472322ccaf3b9cf0}{MostraTodasPessoas}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h);}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00052}00052 \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoa_8h_a9c6c0a87da66d0b52f2e40d60c8554c4}{GetAllPessoas}}(\textcolor{keywordtype}{char}* fileName);}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00054}00054 \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}{CONTROLERROR}} \mbox{\hyperlink{_pessoa_8h_a98ada20622c0881670ce335a726c130a}{SavePessoas}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h, \textcolor{keywordtype}{char}* fileName);}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00056}00056 \textcolor{preprocessor}{\#pragma endregion}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00058}00058 \textcolor{preprocessor}{\#pragma region GereListaContactos}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00060}00060 \textcolor{keywordtype}{void} \mbox{\hyperlink{_pessoa_8h_a00cee935e43f34a4c92a3fb71e3cf94c}{MostraContactosPessoa}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* inicio, \textcolor{keywordtype}{int} nc);}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00061}\mbox{\hyperlink{_pessoa_8h_ad461111e454e31519ef5a69131991664}{00061}} \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoa_8h_ad461111e454e31519ef5a69131991664}{InsereContactoPessoa}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h, Cont }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00062}00062     acto* c, \textcolor{keywordtype}{int} nc);}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00064}00064 \textcolor{preprocessor}{\#pragma endregion}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00066}00066 \textcolor{preprocessor}{\#pragma endregion}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00068}00068 \textcolor{preprocessor}{\#pragma region InformaçãoFicheiro}}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00073}\mbox{\hyperlink{struct_toda_informacao_pessoa}{00073}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_toda_informacao_pessoa}{TodaInformacaoPessoa}} \{}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00074}\mbox{\hyperlink{struct_toda_informacao_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{00074}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_toda_informacao_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}};               }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00075}\mbox{\hyperlink{struct_toda_informacao_pessoa_a70923ee808d94c7f638d04cd67610a1a}{00075}}     \mbox{\hyperlink{struct_contacto}{Contacto}} \mbox{\hyperlink{struct_toda_informacao_pessoa_a70923ee808d94c7f638d04cd67610a1a}{contacto}};  }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00076}\mbox{\hyperlink{_pessoa_8h_a9a09fff6cfa514e749c917e4ca4cbb36}{00076}}  \}\mbox{\hyperlink{_pessoa_8h_a9a09fff6cfa514e749c917e4ca4cbb36}{TodaInformacaoPessoa}};}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00078}00078 \textcolor{keywordtype}{bool} \mbox{\hyperlink{_pessoa_8h_a99992c87487c8b4c0b9ce5e46fc53b64}{SaveAll}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h, \textcolor{keywordtype}{char}* fileName);}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00080}00080 \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoa_8h_ae9ce6d0155e72160bad1e9c446d2c0f4}{GetAllContacts}}(\textcolor{keywordtype}{char}* fileName, \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h);}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00081}00081 \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoa_8h_a103ea5f3c2b425eb51cdb1783f40a3f6}{GetData}}(\textcolor{keywordtype}{char}* fileName);}
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_pessoa_8h_source_l00083}00083 \textcolor{preprocessor}{\#pragma endregion}}
+
+\end{DoxyCode}

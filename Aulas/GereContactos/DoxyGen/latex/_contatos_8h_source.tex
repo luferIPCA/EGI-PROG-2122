@@ -1,0 +1,35 @@
+\hypertarget{_contatos_8h_source}{}\doxysection{Contatos.\+h}
+\label{_contatos_8h_source}\index{D:/Temp/PROG-\/EGI/Aulas/GereContactos/Contatos.h@{D:/Temp/PROG-\/EGI/Aulas/GereContactos/Contatos.h}}
+\mbox{\hyperlink{_contatos_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00010}00010 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00011}00011 \textcolor{preprocessor}{\#pragma warning( disable : 4996 ) }\textcolor{comment}{//evita MSG ERROS: \_CRT\_SECURE\_NO\_WARNINGS}}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00013}00013 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00014}00014 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00016}\mbox{\hyperlink{_contatos_8h_a52037c938e3c1b126c6277da5ca689d0}{00016}} \textcolor{preprocessor}{\#define M 40}}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00017}\mbox{\hyperlink{_contatos_8h_a0240ac851181b84ac374872dc5434ee4}{00017}} \textcolor{preprocessor}{\#define N 40}}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00019}00019 \textcolor{preprocessor}{\#pragma region GereContactos}}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00021}\mbox{\hyperlink{struct_contacto}{00021}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_contacto}{Contacto}} \{}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00022}\mbox{\hyperlink{struct_contacto_a94b8b86f2adafcbc032607aba91b1af2}{00022}}     \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_contacto_a94b8b86f2adafcbc032607aba91b1af2}{desc}}[\mbox{\hyperlink{_contatos_8h_a52037c938e3c1b126c6277da5ca689d0}{M}}];      }
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00023}\mbox{\hyperlink{struct_contacto_a922863cd4f610b434965d7f91789b0fe}{00023}}     \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_contacto_a922863cd4f610b434965d7f91789b0fe}{valor}}[\mbox{\hyperlink{_contatos_8h_a0240ac851181b84ac374872dc5434ee4}{N}}];        }
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00024}\mbox{\hyperlink{_contatos_8h_ae37938707019d4fdfe2519e5699f1470}{00024}} \}\mbox{\hyperlink{_contatos_8h_ae37938707019d4fdfe2519e5699f1470}{Contacto}};}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00026}\mbox{\hyperlink{struct_lista_contactos}{00026}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_lista_contactos}{ListaContactos}} \{}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00027}\mbox{\hyperlink{struct_lista_contactos_a350d32cf054132bcb74a5597e45e6949}{00027}}     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_contacto}{Contacto}} \mbox{\hyperlink{struct_lista_contactos_a350d32cf054132bcb74a5597e45e6949}{contacto}};}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00028}\mbox{\hyperlink{struct_lista_contactos_ad2ce521cffc2980c94d154cbb8345510}{00028}}     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* \mbox{\hyperlink{struct_lista_contactos_ad2ce521cffc2980c94d154cbb8345510}{proxContacto}};}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00029}\mbox{\hyperlink{_contatos_8h_a97809010679ddbb6079c4d850edca2b8}{00029}} \}\mbox{\hyperlink{_contatos_8h_a97809010679ddbb6079c4d850edca2b8}{ListaContactos}};}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00032}00032 \mbox{\hyperlink{struct_contacto}{Contacto}}* \mbox{\hyperlink{_contatos_8h_ab5b8db28899f335a664a19537a92eb8b}{CriaContacto}}(\textcolor{keywordtype}{char}* desc, \textcolor{keywordtype}{char}* valor);}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00033}00033 \textcolor{keywordtype}{void} \mbox{\hyperlink{_contatos_8h_a28f00c8ce79570d774c53c739b52155e}{MostraContactos}}(\mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* h);}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00034}00034 \mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* \mbox{\hyperlink{_contatos_8h_ab8cbef0485e74845daf77aefcb2c83d5}{InsereContactoListaContactos}}(\mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* h, \mbox{\hyperlink{struct_contacto}{Contacto}}* novo);}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00035}00035 \mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* \mbox{\hyperlink{_contatos_8h_aa634f40e1c0c9dd6876508b68ddb5757}{CriaNodoListaContactos}}(\mbox{\hyperlink{struct_contacto}{Contacto}}* c);}
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_contatos_8h_source_l00037}00037 \textcolor{preprocessor}{\#pragma endregion}}
+
+\end{DoxyCode}

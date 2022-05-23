@@ -34,6 +34,13 @@ typedef struct ListaPessoa {
 	struct ListaPessoa* proxPessoa;	/**< Ligação a outra pessoa*/
 }ListaPessoa;
 
+typedef enum CONTROLERROR {
+	NO_ERROR = 1,
+	NO_FILE =45,
+	PRESIDENT=100,
+	NO_DATA=2
+}CONTROLERROR;
+
 #pragma region GerePessoa
 
 Pessoa* CriaLista();
@@ -43,7 +50,8 @@ ListaPessoa* InserePessoaListaPessoas(ListaPessoa* h, Pessoa* p);
 ListaPessoa* ProcuraPessoa(ListaPessoa* inicio, int nc);
 void MostraTodasPessoas(ListaPessoa* h);
 ListaPessoa* GetAllPessoas(char* fileName);
-bool SavePessoas(ListaPessoa* h, char* fileName);
+
+CONTROLERROR SavePessoas(ListaPessoa* h, char* fileName);
 
 #pragma endregion
 
@@ -63,13 +71,13 @@ ListaPessoa* InsereContactoPessoa(ListaPessoa* h, Cont
 * Preservar dados em ficheiro
 */
 typedef struct TodaInformacaoPessoa {
-	int nc;		/**<Numero de Contribuinte da pessoa*/
+	int nc;				/**<Numero de Contribuinte da pessoa*/
 	Contacto contacto;	/**<Contacto da pessoa*/
  }TodaInformacaoPessoa;
 
 bool SaveAll(ListaPessoa* h, char* fileName);
 
-ListaPessoa* GetAll(char* fileName, ListaPessoa* h);
+ListaPessoa* GetAllContacts(char* fileName, ListaPessoa* h);
 ListaPessoa* GetData(char* fileName);
 
 #pragma endregion

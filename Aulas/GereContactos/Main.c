@@ -37,14 +37,18 @@ int main() {
 	MostraContactosPessoa(inicio, 1);
 	MostraContactosPessoa(inicio, 123);
 
-	SavePessoas(inicio, "Pessoas.dat");
+	CONTROLERROR aux = SavePessoas(inicio, "Pessoas.dat");
+	if (aux == NO_FILE) {
+		puts("Não foi possivel gravar...");
+	}
+
 	SaveAll(inicio, "All.dat");
 
 	MostraTodasPessoas(inicio);
 
 	inicio = NULL;	//ATENÇÃO: não é suficiente NULL...deve destruir-se a lista
 	inicio = GetAllPessoas("Pessoas.dat");
-	inicio = GetAll("All.dat", inicio);
+	inicio = GetAllContacts("All.dat", inicio);
 
 
 

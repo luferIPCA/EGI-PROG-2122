@@ -1,0 +1,395 @@
+\hypertarget{_pessoa_8h}{}\doxysection{D\+:/\+Temp/\+PROG-\/\+EGI/\+Aulas/\+Gere\+Contactos/\+Pessoa.h File Reference}
+\label{_pessoa_8h}\index{D:/Temp/PROG-\/EGI/Aulas/GereContactos/Pessoa.h@{D:/Temp/PROG-\/EGI/Aulas/GereContactos/Pessoa.h}}
+
+
+Lista Ligadas Simples (versão 1)  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Contatos.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_pessoa}{Pessoa}}
+\begin{DoxyCompactList}\small\item\em Informação de uma pessoa. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}}
+\begin{DoxyCompactList}\small\item\em Lista de Pessoas Informação sobre a \mbox{\hyperlink{struct_pessoa}{Pessoa}}, os seus contactos e apontador para outra \mbox{\hyperlink{struct_pessoa}{Pessoa}}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_toda_informacao_pessoa}{Toda\+Informacao\+Pessoa}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_pessoa_8h_a52037c938e3c1b126c6277da5ca689d0}{M}}~20
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_pessoa}{Pessoa}} \mbox{\hyperlink{_pessoa_8h_add0a458b9753bc31e316ce02c55b6ad9}{Pessoa}}
+\begin{DoxyCompactList}\small\item\em Informação de uma pessoa. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} \mbox{\hyperlink{_pessoa_8h_a03b75fb9ca29f3a801169efb3dce0a91}{Lista\+Pessoa}}
+\begin{DoxyCompactList}\small\item\em Lista de Pessoas Informação sobre a \mbox{\hyperlink{struct_pessoa}{Pessoa}}, os seus contactos e apontador para outra \mbox{\hyperlink{struct_pessoa}{Pessoa}}. \end{DoxyCompactList}\item 
+typedef enum \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}{CONTROLERROR}} \mbox{\hyperlink{_pessoa_8h_ab767419d655587498e9955d3ceb3019b}{CONTROLERROR}}
+\item 
+typedef struct \mbox{\hyperlink{struct_toda_informacao_pessoa}{Toda\+Informacao\+Pessoa}} \mbox{\hyperlink{_pessoa_8h_a9a09fff6cfa514e749c917e4ca4cbb36}{Toda\+Informacao\+Pessoa}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}{CONTROLERROR}} \{ \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fabf350750d0d4fabd8954c0f1e9bbae94}{NO\+\_\+\+ERROR}} = 1
+, \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364faaa33265d2e12fe02833b6564507c7ac2}{NO\+\_\+\+FILE}} =45
+, \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fa2eea5458370a4b5c6c9141e58e6c2bd2}{PRESIDENT}} =100
+, \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fad2c08fb8362bb7bc8b17aa5a6df6e498}{NO\+\_\+\+DATA}} =2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_pessoa}{Pessoa}} $\ast$ \mbox{\hyperlink{_pessoa_8h_aaa166dacb2ce56eb091d135b7673fd34}{Cria\+Lista}} ()
+\begin{DoxyCompactList}\small\item\em Constroi uma Lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_pessoa}{Pessoa}} $\ast$ \mbox{\hyperlink{_pessoa_8h_a290b1b3cd513897b90a245e6e4536c4f}{Cria\+Pessoa}} (char $\ast$nome, int nc)
+\begin{DoxyCompactList}\small\item\em Cria um nodo \mbox{\hyperlink{struct_pessoa}{Pessoa}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ \mbox{\hyperlink{_pessoa_8h_ac8c60854cc8aba9a98e70d52d048ace2}{Cria\+Nodo\+Lista\+Pessoas}} (\mbox{\hyperlink{struct_pessoa}{Pessoa}} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Cria novo nodo para a Lista de Pessoas Copia para o nodo da lista a informação de uma pessoa. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ \mbox{\hyperlink{_pessoa_8h_a45017a1012209f99597f42aa63cb758c}{Insere\+Pessoa\+Lista\+Pessoas}} (\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$h, \mbox{\hyperlink{struct_pessoa}{Pessoa}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Insere pessoa na Lista de Pessoas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ \mbox{\hyperlink{_pessoa_8h_aa53e03fad61292bd149f5626dd090f41}{Procura\+Pessoa}} (\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$inicio, int nc)
+\item 
+void \mbox{\hyperlink{_pessoa_8h_a4ecf3b5ce3d9817f472322ccaf3b9cf0}{Mostra\+Todas\+Pessoas}} (\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$h)
+\item 
+\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ \mbox{\hyperlink{_pessoa_8h_a9c6c0a87da66d0b52f2e40d60c8554c4}{Get\+All\+Pessoas}} (char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em Carrega informação sobre Pessoas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}{CONTROLERROR}} \mbox{\hyperlink{_pessoa_8h_a98ada20622c0881670ce335a726c130a}{Save\+Pessoas}} (\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$h, char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em Preserva informação da \mbox{\hyperlink{struct_pessoa}{Pessoa}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_pessoa_8h_a00cee935e43f34a4c92a3fb71e3cf94c}{Mostra\+Contactos\+Pessoa}} (\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$inicio, int nc)
+\item 
+\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ \mbox{\hyperlink{_pessoa_8h_ad461111e454e31519ef5a69131991664}{Insere\+Contacto\+Pessoa}} (\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$h, Cont acto $\ast$c, int nc)
+\item 
+bool \mbox{\hyperlink{_pessoa_8h_a99992c87487c8b4c0b9ce5e46fc53b64}{Save\+All}} (\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$h, char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em Pessoas e respectivos contactos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ \mbox{\hyperlink{_pessoa_8h_ae9ce6d0155e72160bad1e9c446d2c0f4}{Get\+All\+Contacts}} (char $\ast$file\+Name, \mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$h)
+\item 
+\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ \mbox{\hyperlink{_pessoa_8h_a103ea5f3c2b425eb51cdb1783f40a3f6}{Get\+Data}} (char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em Carrega dados de entrada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Lista Ligadas Simples (versão 1) 
+
+\begin{DoxyAuthor}{Author}
+lufer 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2022
+\end{DoxyDate}
+Dados globais para uma Lista Ligada Simples de Pessoas \begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000004}{Bug}}]No known bugs. \end{DoxyRefDesc}
+
+
+Definition in file \mbox{\hyperlink{_pessoa_8h_source}{Pessoa.\+h}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_pessoa_8h_a52037c938e3c1b126c6277da5ca689d0}\label{_pessoa_8h_a52037c938e3c1b126c6277da5ca689d0}} 
+\index{Pessoa.h@{Pessoa.h}!M@{M}}
+\index{M@{M}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{M}{M}}
+{\footnotesize\ttfamily \#define M~20}
+
+
+
+Definition at line \mbox{\hyperlink{_pessoa_8h_source_l00016}{16}} of file \mbox{\hyperlink{_pessoa_8h_source}{Pessoa.\+h}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_pessoa_8h_ab767419d655587498e9955d3ceb3019b}\label{_pessoa_8h_ab767419d655587498e9955d3ceb3019b}} 
+\index{Pessoa.h@{Pessoa.h}!CONTROLERROR@{CONTROLERROR}}
+\index{CONTROLERROR@{CONTROLERROR}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{CONTROLERROR}{CONTROLERROR}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}{CONTROLERROR}} \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}{CONTROLERROR}}}
+
+\mbox{\Hypertarget{_pessoa_8h_a03b75fb9ca29f3a801169efb3dce0a91}\label{_pessoa_8h_a03b75fb9ca29f3a801169efb3dce0a91}} 
+\index{Pessoa.h@{Pessoa.h}!ListaPessoa@{ListaPessoa}}
+\index{ListaPessoa@{ListaPessoa}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{ListaPessoa}{ListaPessoa}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} \mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}}}
+
+
+
+Lista de Pessoas Informação sobre a \mbox{\hyperlink{struct_pessoa}{Pessoa}}, os seus contactos e apontador para outra \mbox{\hyperlink{struct_pessoa}{Pessoa}}. 
+
+\mbox{\Hypertarget{_pessoa_8h_add0a458b9753bc31e316ce02c55b6ad9}\label{_pessoa_8h_add0a458b9753bc31e316ce02c55b6ad9}} 
+\index{Pessoa.h@{Pessoa.h}!Pessoa@{Pessoa}}
+\index{Pessoa@{Pessoa}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{Pessoa}{Pessoa}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_pessoa}{Pessoa}} \mbox{\hyperlink{struct_pessoa}{Pessoa}}}
+
+
+
+Informação de uma pessoa. 
+
+\mbox{\Hypertarget{_pessoa_8h_a9a09fff6cfa514e749c917e4ca4cbb36}\label{_pessoa_8h_a9a09fff6cfa514e749c917e4ca4cbb36}} 
+\index{Pessoa.h@{Pessoa.h}!TodaInformacaoPessoa@{TodaInformacaoPessoa}}
+\index{TodaInformacaoPessoa@{TodaInformacaoPessoa}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{TodaInformacaoPessoa}{TodaInformacaoPessoa}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_toda_informacao_pessoa}{Toda\+Informacao\+Pessoa}} \mbox{\hyperlink{struct_toda_informacao_pessoa}{Toda\+Informacao\+Pessoa}}}
+
+Preservar dados em ficheiro 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}\label{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}} 
+\index{Pessoa.h@{Pessoa.h}!CONTROLERROR@{CONTROLERROR}}
+\index{CONTROLERROR@{CONTROLERROR}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{CONTROLERROR}{CONTROLERROR}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}{CONTROLERROR}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_ERROR@{NO\_ERROR}!Pessoa.h@{Pessoa.h}}\index{Pessoa.h@{Pessoa.h}!NO\_ERROR@{NO\_ERROR}}}\mbox{\Hypertarget{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fabf350750d0d4fabd8954c0f1e9bbae94}\label{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fabf350750d0d4fabd8954c0f1e9bbae94}} 
+NO\+\_\+\+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_FILE@{NO\_FILE}!Pessoa.h@{Pessoa.h}}\index{Pessoa.h@{Pessoa.h}!NO\_FILE@{NO\_FILE}}}\mbox{\Hypertarget{_pessoa_8h_a54c5e77305f7d99654c7756dae09364faaa33265d2e12fe02833b6564507c7ac2}\label{_pessoa_8h_a54c5e77305f7d99654c7756dae09364faaa33265d2e12fe02833b6564507c7ac2}} 
+NO\+\_\+\+FILE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PRESIDENT@{PRESIDENT}!Pessoa.h@{Pessoa.h}}\index{Pessoa.h@{Pessoa.h}!PRESIDENT@{PRESIDENT}}}\mbox{\Hypertarget{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fa2eea5458370a4b5c6c9141e58e6c2bd2}\label{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fa2eea5458370a4b5c6c9141e58e6c2bd2}} 
+PRESIDENT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_DATA@{NO\_DATA}!Pessoa.h@{Pessoa.h}}\index{Pessoa.h@{Pessoa.h}!NO\_DATA@{NO\_DATA}}}\mbox{\Hypertarget{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fad2c08fb8362bb7bc8b17aa5a6df6e498}\label{_pessoa_8h_a54c5e77305f7d99654c7756dae09364fad2c08fb8362bb7bc8b17aa5a6df6e498}} 
+NO\+\_\+\+DATA&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_pessoa_8h_source_l00037}{37}} of file \mbox{\hyperlink{_pessoa_8h_source}{Pessoa.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_pessoa_8h_aaa166dacb2ce56eb091d135b7673fd34}\label{_pessoa_8h_aaa166dacb2ce56eb091d135b7673fd34}} 
+\index{Pessoa.h@{Pessoa.h}!CriaLista@{CriaLista}}
+\index{CriaLista@{CriaLista}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{CriaLista()}{CriaLista()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_pessoa}{Pessoa}} $\ast$ Cria\+Lista (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constroi uma Lista. 
+
+\begin{DoxyReturn}{Returns}
+Lista Vazia 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_pessoas_8c_source_l00019}{19}} of file \mbox{\hyperlink{_pessoas_8c_source}{Pessoas.\+c}}.
+
+\mbox{\Hypertarget{_pessoa_8h_ac8c60854cc8aba9a98e70d52d048ace2}\label{_pessoa_8h_ac8c60854cc8aba9a98e70d52d048ace2}} 
+\index{Pessoa.h@{Pessoa.h}!CriaNodoListaPessoas@{CriaNodoListaPessoas}}
+\index{CriaNodoListaPessoas@{CriaNodoListaPessoas}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{CriaNodoListaPessoas()}{CriaNodoListaPessoas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ Cria\+Nodo\+Lista\+Pessoas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_pessoa}{Pessoa}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Cria novo nodo para a Lista de Pessoas Copia para o nodo da lista a informação de uma pessoa. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c} & Novo contacto \\
+\hline
+\mbox{\texttt{ out}}  & {\em Apontador} & para nodo criado \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_pessoas_8c_source_l00043}{43}} of file \mbox{\hyperlink{_pessoas_8c_source}{Pessoas.\+c}}.
+
+\mbox{\Hypertarget{_pessoa_8h_a290b1b3cd513897b90a245e6e4536c4f}\label{_pessoa_8h_a290b1b3cd513897b90a245e6e4536c4f}} 
+\index{Pessoa.h@{Pessoa.h}!CriaPessoa@{CriaPessoa}}
+\index{CriaPessoa@{CriaPessoa}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{CriaPessoa()}{CriaPessoa()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_pessoa}{Pessoa}} $\ast$ Cria\+Pessoa (\begin{DoxyParamCaption}\item[{char $\ast$}]{nome,  }\item[{int}]{nc }\end{DoxyParamCaption})}
+
+
+
+Cria um nodo \mbox{\hyperlink{struct_pessoa}{Pessoa}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & Nome da \mbox{\hyperlink{struct_pessoa}{Pessoa}} \\
+\hline
+{\em nc} & Número de Contribuinte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_pessoa}{Pessoa}} 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_pessoas_8c_source_l00030}{30}} of file \mbox{\hyperlink{_pessoas_8c_source}{Pessoas.\+c}}.
+
+\mbox{\Hypertarget{_pessoa_8h_ae9ce6d0155e72160bad1e9c446d2c0f4}\label{_pessoa_8h_ae9ce6d0155e72160bad1e9c446d2c0f4}} 
+\index{Pessoa.h@{Pessoa.h}!GetAllContacts@{GetAllContacts}}
+\index{GetAllContacts@{GetAllContacts}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{GetAllContacts()}{GetAllContacts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ Get\+All\+Contacts (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+Name,  }\item[{\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$}]{h }\end{DoxyParamCaption})}
+
+Carrega todos os contactos para cada \mbox{\hyperlink{struct_pessoa}{Pessoa}} 
+
+Definition at line \mbox{\hyperlink{_pessoas_8c_source_l00206}{206}} of file \mbox{\hyperlink{_pessoas_8c_source}{Pessoas.\+c}}.
+
+\mbox{\Hypertarget{_pessoa_8h_a9c6c0a87da66d0b52f2e40d60c8554c4}\label{_pessoa_8h_a9c6c0a87da66d0b52f2e40d60c8554c4}} 
+\index{Pessoa.h@{Pessoa.h}!GetAllPessoas@{GetAllPessoas}}
+\index{GetAllPessoas@{GetAllPessoas}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{GetAllPessoas()}{GetAllPessoas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ Get\+All\+Pessoas (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Carrega informação sobre Pessoas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de Pessoas 
+\end{DoxyReturn}
+feof(fp)
+
+Definition at line \mbox{\hyperlink{_pessoas_8c_source_l00126}{126}} of file \mbox{\hyperlink{_pessoas_8c_source}{Pessoas.\+c}}.
+
+\mbox{\Hypertarget{_pessoa_8h_a103ea5f3c2b425eb51cdb1783f40a3f6}\label{_pessoa_8h_a103ea5f3c2b425eb51cdb1783f40a3f6}} 
+\index{Pessoa.h@{Pessoa.h}!GetData@{GetData}}
+\index{GetData@{GetData}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{GetData()}{GetData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ Get\+Data (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Carrega dados de entrada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_pessoas_8c_source_l00234}{234}} of file \mbox{\hyperlink{_pessoas_8c_source}{Pessoas.\+c}}.
+
+\mbox{\Hypertarget{_pessoa_8h_ad461111e454e31519ef5a69131991664}\label{_pessoa_8h_ad461111e454e31519ef5a69131991664}} 
+\index{Pessoa.h@{Pessoa.h}!InsereContactoPessoa@{InsereContactoPessoa}}
+\index{InsereContactoPessoa@{InsereContactoPessoa}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{InsereContactoPessoa()}{InsereContactoPessoa()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ Insere\+Contacto\+Pessoa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$}]{h,  }\item[{Cont acto $\ast$}]{c,  }\item[{int}]{nc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_pessoa_8h_a45017a1012209f99597f42aa63cb758c}\label{_pessoa_8h_a45017a1012209f99597f42aa63cb758c}} 
+\index{Pessoa.h@{Pessoa.h}!InserePessoaListaPessoas@{InserePessoaListaPessoas}}
+\index{InserePessoaListaPessoas@{InserePessoaListaPessoas}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{InserePessoaListaPessoas()}{InserePessoaListaPessoas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ Insere\+Pessoa\+Lista\+Pessoas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$}]{h,  }\item[{\mbox{\hyperlink{struct_pessoa}{Pessoa}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Insere pessoa na Lista de Pessoas. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p} & Nova pessoa \\
+\hline
+\mbox{\texttt{ in}}  & {\em Apontador} & para inicio da lista \\
+\hline
+\mbox{\texttt{ out}}  & {\em Apontador} & para inicio da lista \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_pessoas_8c_source_l00058}{58}} of file \mbox{\hyperlink{_pessoas_8c_source}{Pessoas.\+c}}.
+
+\mbox{\Hypertarget{_pessoa_8h_a00cee935e43f34a4c92a3fb71e3cf94c}\label{_pessoa_8h_a00cee935e43f34a4c92a3fb71e3cf94c}} 
+\index{Pessoa.h@{Pessoa.h}!MostraContactosPessoa@{MostraContactosPessoa}}
+\index{MostraContactosPessoa@{MostraContactosPessoa}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{MostraContactosPessoa()}{MostraContactosPessoa()}}
+{\footnotesize\ttfamily void Mostra\+Contactos\+Pessoa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$}]{inicio,  }\item[{int}]{nc }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_pessoas_8c_source_l00106}{106}} of file \mbox{\hyperlink{_pessoas_8c_source}{Pessoas.\+c}}.
+
+\mbox{\Hypertarget{_pessoa_8h_a4ecf3b5ce3d9817f472322ccaf3b9cf0}\label{_pessoa_8h_a4ecf3b5ce3d9817f472322ccaf3b9cf0}} 
+\index{Pessoa.h@{Pessoa.h}!MostraTodasPessoas@{MostraTodasPessoas}}
+\index{MostraTodasPessoas@{MostraTodasPessoas}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{MostraTodasPessoas()}{MostraTodasPessoas()}}
+{\footnotesize\ttfamily void Mostra\+Todas\+Pessoas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$}]{h }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_pessoas_8c_source_l00096}{96}} of file \mbox{\hyperlink{_pessoas_8c_source}{Pessoas.\+c}}.
+
+\mbox{\Hypertarget{_pessoa_8h_aa53e03fad61292bd149f5626dd090f41}\label{_pessoa_8h_aa53e03fad61292bd149f5626dd090f41}} 
+\index{Pessoa.h@{Pessoa.h}!ProcuraPessoa@{ProcuraPessoa}}
+\index{ProcuraPessoa@{ProcuraPessoa}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{ProcuraPessoa()}{ProcuraPessoa()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$ Procura\+Pessoa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$}]{inicio,  }\item[{int}]{nc }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_pessoas_8c_source_l00072}{72}} of file \mbox{\hyperlink{_pessoas_8c_source}{Pessoas.\+c}}.
+
+\mbox{\Hypertarget{_pessoa_8h_a99992c87487c8b4c0b9ce5e46fc53b64}\label{_pessoa_8h_a99992c87487c8b4c0b9ce5e46fc53b64}} 
+\index{Pessoa.h@{Pessoa.h}!SaveAll@{SaveAll}}
+\index{SaveAll@{SaveAll}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{SaveAll()}{SaveAll()}}
+{\footnotesize\ttfamily bool Save\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$}]{h,  }\item[{char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Pessoas e respectivos contactos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_pessoas_8c_source_l00175}{175}} of file \mbox{\hyperlink{_pessoas_8c_source}{Pessoas.\+c}}.
+
+\mbox{\Hypertarget{_pessoa_8h_a98ada20622c0881670ce335a726c130a}\label{_pessoa_8h_a98ada20622c0881670ce335a726c130a}} 
+\index{Pessoa.h@{Pessoa.h}!SavePessoas@{SavePessoas}}
+\index{SavePessoas@{SavePessoas}!Pessoa.h@{Pessoa.h}}
+\doxysubsubsection{\texorpdfstring{SavePessoas()}{SavePessoas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_pessoa_8h_a54c5e77305f7d99654c7756dae09364f}{CONTROLERROR}} Save\+Pessoas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_pessoa}{Lista\+Pessoa}} $\ast$}]{h,  }\item[{char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Preserva informação da \mbox{\hyperlink{struct_pessoa}{Pessoa}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_pessoas_8c_source_l00152}{152}} of file \mbox{\hyperlink{_pessoas_8c_source}{Pessoas.\+c}}.
+

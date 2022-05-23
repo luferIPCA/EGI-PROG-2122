@@ -1,0 +1,200 @@
+\hypertarget{_pessoas_8c_source}{}\doxysection{Pessoas.\+c}
+\label{_pessoas_8c_source}\index{D:/Temp/PROG-\/EGI/Aulas/GereContactos/Pessoas.c@{D:/Temp/PROG-\/EGI/Aulas/GereContactos/Pessoas.c}}
+\mbox{\hyperlink{_pessoas_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00010}00010 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_pessoa_8h}{Pessoa.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_contatos_8h}{Contatos.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00019}\mbox{\hyperlink{_pessoa_8h_aaa166dacb2ce56eb091d135b7673fd34}{00019}} \mbox{\hyperlink{struct_pessoa}{Pessoa}}* \mbox{\hyperlink{_pessoas_8c_aaa166dacb2ce56eb091d135b7673fd34}{CriaLista}}() \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00020}00020     \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00021}00021 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00030}\mbox{\hyperlink{_pessoa_8h_a290b1b3cd513897b90a245e6e4536c4f}{00030}} \mbox{\hyperlink{struct_pessoa}{Pessoa}}* \mbox{\hyperlink{_pessoas_8c_a290b1b3cd513897b90a245e6e4536c4f}{CriaPessoa}}(\textcolor{keywordtype}{char}* nome, \textcolor{keywordtype}{int} nc) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00031}00031     \mbox{\hyperlink{struct_pessoa}{Pessoa}}* aux = (\mbox{\hyperlink{struct_pessoa}{Pessoa}}*)calloc(1, \textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_pessoa}{Pessoa}}));}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00032}00032     aux-\/>\mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}} = nc;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00033}00033     strcpy(aux-\/>\mbox{\hyperlink{struct_pessoa_ade7342cfcf420ca1fdfd8dbafb7873e8}{nome}}, nome);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00034}00034     \textcolor{keywordflow}{return} aux;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00035}00035 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00043}\mbox{\hyperlink{_pessoa_8h_ac8c60854cc8aba9a98e70d52d048ace2}{00043}} \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoas_8c_ac8c60854cc8aba9a98e70d52d048ace2}{CriaNodoListaPessoas}}(\mbox{\hyperlink{struct_pessoa}{Pessoa}}* c) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00044}00044     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* nova = (\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}*)calloc(1, \textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}));}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00045}00045     nova-\/>\mbox{\hyperlink{struct_lista_pessoa_a940b0db7f1a0bd362a125b27d4e4637b}{fichaPessoa}}.\mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}}=c-\/>\mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00046}00046     strcpy(nova-\/>\mbox{\hyperlink{struct_lista_pessoa_a940b0db7f1a0bd362a125b27d4e4637b}{fichaPessoa}}.\mbox{\hyperlink{struct_pessoa_ade7342cfcf420ca1fdfd8dbafb7873e8}{nome}}, c-\/>\mbox{\hyperlink{struct_pessoa_ade7342cfcf420ca1fdfd8dbafb7873e8}{nome}});}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00047}00047     nova-\/>\mbox{\hyperlink{struct_lista_pessoa_aa88e185653014ff26a4834dd2dd99349}{listaContactos}} = NULL;  \textcolor{comment}{// no início não tem contactos}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00048}00048     nova-\/>\mbox{\hyperlink{struct_lista_pessoa_af14382f29862b4fa21b55536bc46737c}{proxPessoa}} = NULL;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00049}00049     \textcolor{keywordflow}{return} nova;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00050}00050 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00058}\mbox{\hyperlink{_pessoa_8h_a45017a1012209f99597f42aa63cb758c}{00058}} \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoas_8c_a45017a1012209f99597f42aa63cb758c}{InserePessoaListaPessoas}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h, \mbox{\hyperlink{struct_pessoa}{Pessoa}}* p) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00059}00059     \textcolor{keywordflow}{if} (p == NULL) \textcolor{keywordflow}{return} h;    \textcolor{comment}{//se nova não tem dados}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00060}00060     \textcolor{comment}{//Cria novo nodo da lista de pessoas}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00061}00061     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* nova = \mbox{\hyperlink{_pessoas_8c_ac8c60854cc8aba9a98e70d52d048ace2}{CriaNodoListaPessoas}}(p);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00062}00062     \textcolor{keywordflow}{if} (h == NULL) h = nova;    \textcolor{comment}{//se lista é vazia}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00063}00063     \textcolor{keywordflow}{else} \{                  \textcolor{comment}{//  insere ordenado pelo nc}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00064}00064         nova-\/>\mbox{\hyperlink{struct_lista_pessoa_af14382f29862b4fa21b55536bc46737c}{proxPessoa}} = h;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00065}00065         h = nova;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00066}00066     \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00067}00067     \textcolor{keywordflow}{return} h;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00068}00068 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00072}\mbox{\hyperlink{_pessoa_8h_aa53e03fad61292bd149f5626dd090f41}{00072}} \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoas_8c_aa53e03fad61292bd149f5626dd090f41}{ProcuraPessoa}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* inicio, \textcolor{keywordtype}{int} nc) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00073}00073     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* aux = inicio;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00074}00074     \textcolor{keywordflow}{while} (aux) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00075}00075         \textcolor{keywordflow}{if} (aux-\/>\mbox{\hyperlink{struct_lista_pessoa_a940b0db7f1a0bd362a125b27d4e4637b}{fichaPessoa}}.\mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}} == nc) \textcolor{keywordflow}{return} aux; \textcolor{comment}{//se encontrou}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00076}00076         aux = aux-\/>\mbox{\hyperlink{struct_lista_pessoa_af14382f29862b4fa21b55536bc46737c}{proxPessoa}};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00077}00077     \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00078}00078     \textcolor{keywordflow}{return} NULL;            \textcolor{comment}{//se não encontrou}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00079}00079 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00083}\mbox{\hyperlink{_pessoas_8c_ada06e79d477667f34f183ed43e832b2c}{00083}} \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoas_8c_ada06e79d477667f34f183ed43e832b2c}{InsereContactoPessoa}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h, \mbox{\hyperlink{struct_contacto}{Contacto}}* c, \textcolor{keywordtype}{int} nc) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00084}00084     \textcolor{keywordflow}{if} (h == NULL) \textcolor{keywordflow}{return} NULL; \textcolor{comment}{// se lista vazia}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00085}00085     \textcolor{keywordflow}{if} (c == NULL) \textcolor{keywordflow}{return} h;    \textcolor{comment}{//se contacto não tem informação}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00086}00086     }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00087}00087     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* aux = \mbox{\hyperlink{_pessoas_8c_aa53e03fad61292bd149f5626dd090f41}{ProcuraPessoa}}(h, nc);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00088}00088     \textcolor{keywordflow}{if} (aux) \{      \textcolor{comment}{//se existe essa pessoa}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00089}00089         aux-\/>\mbox{\hyperlink{struct_lista_pessoa_aa88e185653014ff26a4834dd2dd99349}{listaContactos}} = \mbox{\hyperlink{_contactos_8c_a401edd1ec79d30ced93daf5ed59cb940}{InsereContactoListaContactos}}(aux-\/>\mbox{\hyperlink{struct_lista_pessoa_aa88e185653014ff26a4834dd2dd99349}{listaContactos}}, c);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00090}00090     \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00091}00091     \textcolor{keywordflow}{return} h;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00092}00092 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00096}\mbox{\hyperlink{_pessoa_8h_a4ecf3b5ce3d9817f472322ccaf3b9cf0}{00096}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_pessoas_8c_a4ecf3b5ce3d9817f472322ccaf3b9cf0}{MostraTodasPessoas}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00097}00097     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* aux = h;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00098}00098     \textcolor{keywordflow}{while} (aux) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00099}00099         printf(\textcolor{stringliteral}{"{}Pessoa: NC=\%d -\/ Nome= \%s\(\backslash\)n"{}}, aux-\/>\mbox{\hyperlink{struct_lista_pessoa_a940b0db7f1a0bd362a125b27d4e4637b}{fichaPessoa}}.\mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}}, aux-\/>\mbox{\hyperlink{struct_lista_pessoa_a940b0db7f1a0bd362a125b27d4e4637b}{fichaPessoa}}.\mbox{\hyperlink{struct_pessoa_ade7342cfcf420ca1fdfd8dbafb7873e8}{nome}});}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00100}00100         aux = aux-\/>\mbox{\hyperlink{struct_lista_pessoa_af14382f29862b4fa21b55536bc46737c}{proxPessoa}};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00101}00101     \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00102}00102 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00106}\mbox{\hyperlink{_pessoa_8h_a00cee935e43f34a4c92a3fb71e3cf94c}{00106}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_pessoas_8c_a00cee935e43f34a4c92a3fb71e3cf94c}{MostraContactosPessoa}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* inicio, \textcolor{keywordtype}{int} nc) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00107}00107     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* aux = inicio;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00108}00108     aux = \mbox{\hyperlink{_pessoas_8c_aa53e03fad61292bd149f5626dd090f41}{ProcuraPessoa}}(inicio, nc);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00109}00109     \textcolor{keywordflow}{if} (aux) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00110}00110         \mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* inicioContactos = aux-\/>\mbox{\hyperlink{struct_lista_pessoa_aa88e185653014ff26a4834dd2dd99349}{listaContactos}};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00111}00111         printf(\textcolor{stringliteral}{"{}Pessoa: \%d\(\backslash\)n"{}}, aux-\/>\mbox{\hyperlink{struct_lista_pessoa_a940b0db7f1a0bd362a125b27d4e4637b}{fichaPessoa}}.\mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}});}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00112}00112         \mbox{\hyperlink{_contactos_8c_a28f00c8ce79570d774c53c739b52155e}{MostraContactos}}(inicioContactos);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00113}00113     \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00114}00114 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00118}00118 \textcolor{preprocessor}{\#pragma region GereDataFile}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00126}\mbox{\hyperlink{_pessoa_8h_a9c6c0a87da66d0b52f2e40d60c8554c4}{00126}} \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoas_8c_a9c6c0a87da66d0b52f2e40d60c8554c4}{GetAllPessoas}}(\textcolor{keywordtype}{char}* fileName) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00127}00127     FILE* fp;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00128}00128     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h = NULL;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00129}00129     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* aux;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00130}00130     \mbox{\hyperlink{struct_pessoa}{Pessoa}} p;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00132}00132     \textcolor{keywordflow}{if} ((fp = fopen(fileName, \textcolor{stringliteral}{"{}rb"{}})) == NULL) }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00133}00133         \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00134}00134     \textcolor{keywordflow}{while} (fread(\&p, \textcolor{keyword}{sizeof}(p), 1, fp)) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00135}00135         \textcolor{keywordflow}{if} (\mbox{\hyperlink{_pessoas_8c_aa53e03fad61292bd149f5626dd090f41}{ProcuraPessoa}}(h, p.\mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}}) == NULL) \{\textcolor{comment}{//se pessoa ainda não está em memória}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00136}00136             aux = \mbox{\hyperlink{_pessoas_8c_ac8c60854cc8aba9a98e70d52d048ace2}{CriaNodoListaPessoas}}(\&p);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00137}00137             h = \mbox{\hyperlink{_pessoas_8c_a45017a1012209f99597f42aa63cb758c}{InserePessoaListaPessoas}}(h, aux);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00138}00138             \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00139}00139         \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00140}00140     \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00141}00141     fclose(fp);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00142}00142     \textcolor{keywordflow}{return} h;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00143}00143 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00152}\mbox{\hyperlink{_pessoa_8h_a98ada20622c0881670ce335a726c130a}{00152}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{_pessoas_8c_a263f4c325a162d3637245e595e48b86e}{SavePessoas}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h, \textcolor{keywordtype}{char}* fileName) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00153}00153     \textcolor{keywordflow}{if} (h == NULL) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00154}00154     FILE* fp;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00155}00155     \textcolor{keywordflow}{if} ((fp = fopen(fileName, \textcolor{stringliteral}{"{}wb"{}})) == NULL) }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00156}00156         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00157}00157     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* aux = h;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00158}00158     \textcolor{keywordflow}{while} (aux) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00159}00159         fwrite(\&aux-\/>\mbox{\hyperlink{struct_lista_pessoa_a940b0db7f1a0bd362a125b27d4e4637b}{fichaPessoa}}, \textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_pessoa}{Pessoa}}), 1, fp);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00160}00160         aux = aux-\/>\mbox{\hyperlink{struct_lista_pessoa_af14382f29862b4fa21b55536bc46737c}{proxPessoa}};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00161}00161 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00162}00162     \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00163}00163     fclose(fp);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00164}00164     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00165}00165 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00166}00166 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00175}\mbox{\hyperlink{_pessoa_8h_a99992c87487c8b4c0b9ce5e46fc53b64}{00175}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{_pessoas_8c_a99992c87487c8b4c0b9ce5e46fc53b64}{SaveAll}}(\mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h, \textcolor{keywordtype}{char}* fileName) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00176}00176     \textcolor{keywordflow}{if} (h == NULL) }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00177}00177         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00178}00178     FILE* fp;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00179}00179 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00180}00180     \textcolor{keywordflow}{if} ((fp = fopen(fileName, \textcolor{stringliteral}{"{}wb"{}})) == NULL) }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00181}00181         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00182}00182 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00183}00183     \textcolor{comment}{//grava n registos no ficheiro}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00184}00184     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* aux = h;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00185}00185     \mbox{\hyperlink{struct_toda_informacao_pessoa}{TodaInformacaoPessoa}} auxFile;   \textcolor{comment}{//struct para gravar em ficheiro!}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00186}00186     \textcolor{keywordflow}{while} (aux) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00187}00187         \textcolor{comment}{//Colocar no registo de ficheiro a inf que está no registo de memória}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00188}00188         auxFile.\mbox{\hyperlink{struct_toda_informacao_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}} = aux-\/>\mbox{\hyperlink{struct_lista_pessoa_a940b0db7f1a0bd362a125b27d4e4637b}{fichaPessoa}}.\mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00189}00189         \textcolor{comment}{//percore a lista de contactos}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00190}00190         \mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* auxContatos = aux-\/>\mbox{\hyperlink{struct_lista_pessoa_aa88e185653014ff26a4834dd2dd99349}{listaContactos}};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00191}00191         \textcolor{keywordflow}{while} (auxContatos) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00192}00192             strcpy(auxFile.\mbox{\hyperlink{struct_toda_informacao_pessoa_a70923ee808d94c7f638d04cd67610a1a}{contacto}}.\mbox{\hyperlink{struct_contacto_a94b8b86f2adafcbc032607aba91b1af2}{desc}}, auxContatos-\/>\mbox{\hyperlink{struct_lista_contactos_a350d32cf054132bcb74a5597e45e6949}{contacto}}.\mbox{\hyperlink{struct_contacto_a94b8b86f2adafcbc032607aba91b1af2}{desc}});}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00193}00193             strcpy(auxFile.\mbox{\hyperlink{struct_toda_informacao_pessoa_a70923ee808d94c7f638d04cd67610a1a}{contacto}}.\mbox{\hyperlink{struct_contacto_a922863cd4f610b434965d7f91789b0fe}{valor}}, auxContatos-\/>\mbox{\hyperlink{struct_lista_contactos_a350d32cf054132bcb74a5597e45e6949}{contacto}}.\mbox{\hyperlink{struct_contacto_a922863cd4f610b434965d7f91789b0fe}{valor}});}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00194}00194             fwrite(\&auxFile, \textcolor{keyword}{sizeof}(auxFile), 1, fp);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00195}00195             auxContatos = auxContatos-\/>\mbox{\hyperlink{struct_lista_contactos_ad2ce521cffc2980c94d154cbb8345510}{proxContacto}};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00196}00196         \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00197}00197         aux = aux-\/>\mbox{\hyperlink{struct_lista_pessoa_af14382f29862b4fa21b55536bc46737c}{proxPessoa}};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00198}00198     \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00199}00199     fclose(fp);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00200}00200     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00201}00201 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00202}00202 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00206}\mbox{\hyperlink{_pessoa_8h_ae9ce6d0155e72160bad1e9c446d2c0f4}{00206}} \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoas_8c_ae9ce6d0155e72160bad1e9c446d2c0f4}{GetAllContacts}}(\textcolor{keywordtype}{char}* fileName, \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00207}00207     FILE* fp;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00208}00208     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* aux = h;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00209}00209     \mbox{\hyperlink{struct_pessoa}{Pessoa}} p;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00210}00210 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00211}00211     \textcolor{keywordflow}{if} (h == NULL) \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00212}00212 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00213}00213     \textcolor{keywordflow}{if} ((fp = fopen(fileName, \textcolor{stringliteral}{"{}rb"{}})) == NULL) }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00214}00214         \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00215}00215 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00216}00216     \mbox{\hyperlink{struct_toda_informacao_pessoa}{TodaInformacaoPessoa}} auxFile;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00217}00217     \textcolor{keywordflow}{while} (fread(\&auxFile, \textcolor{keyword}{sizeof}(auxFile), 1, fp)) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00218}00218         \textcolor{comment}{//aux = ProcuraPessoa(h, auxFile.nc);}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00219}00219         \textcolor{comment}{//ListaPessoa* InsereContactoPessoa(ListaPessoa* h, Contacto* c, int nc)}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00220}00220         h = \mbox{\hyperlink{_pessoas_8c_ada06e79d477667f34f183ed43e832b2c}{InsereContactoPessoa}}(h, \&auxFile.\mbox{\hyperlink{struct_toda_informacao_pessoa_a70923ee808d94c7f638d04cd67610a1a}{contacto}}, auxFile.\mbox{\hyperlink{struct_toda_informacao_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}});}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00221}00221     \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00222}00222     fclose(fp);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00223}00223     \textcolor{keywordflow}{return} h;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00224}00224 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00225}00225 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00226}\mbox{\hyperlink{_pessoas_8c_a392fb874e547e582e9c66a08a1f23326}{00226}} \textcolor{preprocessor}{\#define MAX 100}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00227}00227 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00234}\mbox{\hyperlink{_pessoa_8h_a103ea5f3c2b425eb51cdb1783f40a3f6}{00234}} \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* \mbox{\hyperlink{_pessoas_8c_a103ea5f3c2b425eb51cdb1783f40a3f6}{GetData}}(\textcolor{keywordtype}{char}* fileName) \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00235}00235     FILE* fp;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00236}00236     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* h = NULL;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00237}00237     \mbox{\hyperlink{struct_lista_pessoa}{ListaPessoa}}* aux;    \textcolor{comment}{//auxiliar}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00238}00238     \mbox{\hyperlink{struct_pessoa}{Pessoa}} p;         \textcolor{comment}{//auxiliar}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00239}00239     \mbox{\hyperlink{struct_contacto}{Contacto}} c;         \textcolor{comment}{//auxiliar}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00240}00240     \textcolor{keywordtype}{char} linhaFicheiro[\mbox{\hyperlink{_pessoas_8c_a392fb874e547e582e9c66a08a1f23326}{MAX}}];}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00241}00241 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00242}00242     \textcolor{keywordflow}{if} ((fp = fopen(fileName, \textcolor{stringliteral}{"{}r"{}})) == NULL) \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00243}00243     }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00244}00244     \textcolor{keywordflow}{while} (fgets(linhaFicheiro,\mbox{\hyperlink{_pessoas_8c_a392fb874e547e582e9c66a08a1f23326}{MAX}},fp) != NULL)}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00245}00245         \{}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00246}00246         \textcolor{comment}{//[\string^0-\/9]}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00247}00247         \textcolor{comment}{//[\string^a-\/zA-\/Z]}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00248}00248         sscanf(linhaFicheiro,\textcolor{stringliteral}{"{}\%[\string^;];\%d;\%[\string^;];\%s"{}}, p.\mbox{\hyperlink{struct_pessoa_ade7342cfcf420ca1fdfd8dbafb7873e8}{nome}}, \&p.\mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}}, c.\mbox{\hyperlink{struct_contacto_a94b8b86f2adafcbc032607aba91b1af2}{desc}}, c.\mbox{\hyperlink{struct_contacto_a922863cd4f610b434965d7f91789b0fe}{valor}});}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00249}00249     }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00250}00250         \textcolor{keywordflow}{if} (\mbox{\hyperlink{_pessoas_8c_aa53e03fad61292bd149f5626dd090f41}{ProcuraPessoa}}(h, p.\mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}}) == NULL) \{\textcolor{comment}{//se pessoa ainda não está em memória}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00251}00251             \textcolor{comment}{//Insere Pessoa}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00252}00252             aux = \mbox{\hyperlink{_pessoas_8c_ac8c60854cc8aba9a98e70d52d048ace2}{CriaNodoListaPessoas}}(\&p);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00253}00253             h = \mbox{\hyperlink{_pessoas_8c_a45017a1012209f99597f42aa63cb758c}{InserePessoaListaPessoas}}(h, aux);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00254}00254         \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00255}00255         \textcolor{comment}{//Insere contacto}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00256}00256         h = \mbox{\hyperlink{_pessoas_8c_ada06e79d477667f34f183ed43e832b2c}{InsereContactoPessoa}}(h, \&c, p.\mbox{\hyperlink{struct_pessoa_a2e6c8f821f88e1dab510dc11a7824721}{nc}});}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00257}00257     \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00258}00258     fclose(fp);}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00259}00259     \textcolor{keywordflow}{return} h;}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00260}00260 \}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00261}00261 \textcolor{preprocessor}{\#pragma endregion}}
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00262}00262 }
+\DoxyCodeLine{\Hypertarget{_pessoas_8c_source_l00263}00263 }
+
+\end{DoxyCode}

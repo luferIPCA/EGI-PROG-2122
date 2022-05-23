@@ -1,0 +1,105 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Bug List}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Data Structure Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Data Structures}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Data Structure Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Contacto Struct Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Field Documentation}{7}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}desc}{7}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}valor}{8}{subsubsection.4.1.2.2}%
+\contentsline {section}{\numberline {4.2}Lista\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Contactos Struct Reference}{8}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{8}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Field Documentation}{8}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}contacto}{8}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}proxContacto}{8}{subsubsection.4.2.2.2}%
+\contentsline {section}{\numberline {4.3}Lista\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pessoa Struct Reference}{9}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{9}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Field Documentation}{9}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}fichaPessoa}{9}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}listaContactos}{9}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}proxPessoa}{10}{subsubsection.4.3.2.3}%
+\contentsline {section}{\numberline {4.4}Pessoa Struct Reference}{10}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{10}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Field Documentation}{10}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}nc}{10}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}nome}{11}{subsubsection.4.4.2.2}%
+\contentsline {section}{\numberline {4.5}Toda\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Informacao\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pessoa Struct Reference}{11}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{11}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Field Documentation}{11}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}contacto}{11}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}nc}{11}{subsubsection.4.5.2.2}%
+\contentsline {chapter}{\numberline {5}File Documentation}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Temp/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}PROG-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}EGI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Gere\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Contactos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Contactos.c File Reference}{13}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{13}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Function Documentation}{14}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}CriaContacto()}{14}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}CriaNodoListaContactos()}{14}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}InsereContactoListaContactos()}{14}{subsubsection.5.1.2.3}%
+\contentsline {subsubsection}{\numberline {5.1.2.4}MostraContactos()}{15}{subsubsection.5.1.2.4}%
+\contentsline {section}{\numberline {5.2}Contactos.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{15}{section.5.2}%
+\contentsline {section}{\numberline {5.3}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Temp/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}PROG-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}EGI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Gere\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Contactos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Contatos.h File Reference}{15}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Macro Definition Documentation}{16}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}M}{16}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.2}N}{16}{subsubsection.5.3.1.2}%
+\contentsline {subsection}{\numberline {5.3.2}Typedef Documentation}{16}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}Contacto}{16}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}ListaContactos}{17}{subsubsection.5.3.2.2}%
+\contentsline {subsection}{\numberline {5.3.3}Function Documentation}{17}{subsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.3.1}CriaContacto()}{17}{subsubsection.5.3.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.3.2}CriaNodoListaContactos()}{17}{subsubsection.5.3.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3.3}InsereContactoListaContactos()}{17}{subsubsection.5.3.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.3.4}MostraContactos()}{18}{subsubsection.5.3.3.4}%
+\contentsline {section}{\numberline {5.4}Contatos.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{18}{section.5.4}%
+\contentsline {section}{\numberline {5.5}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Temp/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}PROG-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}EGI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Gere\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Contactos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main.c File Reference}{18}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Function Documentation}{18}{subsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.1}main()}{19}{subsubsection.5.5.1.1}%
+\contentsline {section}{\numberline {5.6}Main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{19}{section.5.6}%
+\contentsline {section}{\numberline {5.7}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Temp/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}PROG-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}EGI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Gere\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Contactos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pessoa.h File Reference}{19}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{21}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Macro Definition Documentation}{21}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}M}{21}{subsubsection.5.7.2.1}%
+\contentsline {subsection}{\numberline {5.7.3}Typedef Documentation}{21}{subsection.5.7.3}%
+\contentsline {subsubsection}{\numberline {5.7.3.1}CONTROLERROR}{21}{subsubsection.5.7.3.1}%
+\contentsline {subsubsection}{\numberline {5.7.3.2}ListaPessoa}{21}{subsubsection.5.7.3.2}%
+\contentsline {subsubsection}{\numberline {5.7.3.3}Pessoa}{22}{subsubsection.5.7.3.3}%
+\contentsline {subsubsection}{\numberline {5.7.3.4}TodaInformacaoPessoa}{22}{subsubsection.5.7.3.4}%
+\contentsline {subsection}{\numberline {5.7.4}Enumeration Type Documentation}{22}{subsection.5.7.4}%
+\contentsline {subsubsection}{\numberline {5.7.4.1}CONTROLERROR}{22}{subsubsection.5.7.4.1}%
+\contentsline {subsection}{\numberline {5.7.5}Function Documentation}{22}{subsection.5.7.5}%
+\contentsline {subsubsection}{\numberline {5.7.5.1}CriaLista()}{22}{subsubsection.5.7.5.1}%
+\contentsline {subsubsection}{\numberline {5.7.5.2}CriaNodoListaPessoas()}{23}{subsubsection.5.7.5.2}%
+\contentsline {subsubsection}{\numberline {5.7.5.3}CriaPessoa()}{23}{subsubsection.5.7.5.3}%
+\contentsline {subsubsection}{\numberline {5.7.5.4}GetAllContacts()}{23}{subsubsection.5.7.5.4}%
+\contentsline {subsubsection}{\numberline {5.7.5.5}GetAllPessoas()}{23}{subsubsection.5.7.5.5}%
+\contentsline {subsubsection}{\numberline {5.7.5.6}GetData()}{24}{subsubsection.5.7.5.6}%
+\contentsline {subsubsection}{\numberline {5.7.5.7}InsereContactoPessoa()}{24}{subsubsection.5.7.5.7}%
+\contentsline {subsubsection}{\numberline {5.7.5.8}InserePessoaListaPessoas()}{24}{subsubsection.5.7.5.8}%
+\contentsline {subsubsection}{\numberline {5.7.5.9}MostraContactosPessoa()}{25}{subsubsection.5.7.5.9}%
+\contentsline {subsubsection}{\numberline {5.7.5.10}MostraTodasPessoas()}{25}{subsubsection.5.7.5.10}%
+\contentsline {subsubsection}{\numberline {5.7.5.11}ProcuraPessoa()}{25}{subsubsection.5.7.5.11}%
+\contentsline {subsubsection}{\numberline {5.7.5.12}SaveAll()}{25}{subsubsection.5.7.5.12}%
+\contentsline {subsubsection}{\numberline {5.7.5.13}SavePessoas()}{26}{subsubsection.5.7.5.13}%
+\contentsline {section}{\numberline {5.8}Pessoa.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{26}{section.5.8}%
+\contentsline {section}{\numberline {5.9}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Temp/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}PROG-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}EGI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Gere\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Contactos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pessoas.c File Reference}{27}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{28}{subsection.5.9.1}%
+\contentsline {subsection}{\numberline {5.9.2}Macro Definition Documentation}{28}{subsection.5.9.2}%
+\contentsline {subsubsection}{\numberline {5.9.2.1}MAX}{28}{subsubsection.5.9.2.1}%
+\contentsline {subsection}{\numberline {5.9.3}Function Documentation}{28}{subsection.5.9.3}%
+\contentsline {subsubsection}{\numberline {5.9.3.1}CriaLista()}{29}{subsubsection.5.9.3.1}%
+\contentsline {subsubsection}{\numberline {5.9.3.2}CriaNodoListaPessoas()}{29}{subsubsection.5.9.3.2}%
+\contentsline {subsubsection}{\numberline {5.9.3.3}CriaPessoa()}{29}{subsubsection.5.9.3.3}%
+\contentsline {subsubsection}{\numberline {5.9.3.4}GetAllContacts()}{30}{subsubsection.5.9.3.4}%
+\contentsline {subsubsection}{\numberline {5.9.3.5}GetAllPessoas()}{30}{subsubsection.5.9.3.5}%
+\contentsline {subsubsection}{\numberline {5.9.3.6}GetData()}{30}{subsubsection.5.9.3.6}%
+\contentsline {subsubsection}{\numberline {5.9.3.7}InsereContactoPessoa()}{31}{subsubsection.5.9.3.7}%
+\contentsline {subsubsection}{\numberline {5.9.3.8}InserePessoaListaPessoas()}{31}{subsubsection.5.9.3.8}%
+\contentsline {subsubsection}{\numberline {5.9.3.9}MostraContactosPessoa()}{31}{subsubsection.5.9.3.9}%
+\contentsline {subsubsection}{\numberline {5.9.3.10}MostraTodasPessoas()}{31}{subsubsection.5.9.3.10}%
+\contentsline {subsubsection}{\numberline {5.9.3.11}ProcuraPessoa()}{32}{subsubsection.5.9.3.11}%
+\contentsline {subsubsection}{\numberline {5.9.3.12}SaveAll()}{32}{subsubsection.5.9.3.12}%
+\contentsline {subsubsection}{\numberline {5.9.3.13}SavePessoas()}{32}{subsubsection.5.9.3.13}%
+\contentsline {section}{\numberline {5.10}Pessoas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{33}{section.5.10}%
+\contentsline {chapter}{Index}{37}{section*.19}%

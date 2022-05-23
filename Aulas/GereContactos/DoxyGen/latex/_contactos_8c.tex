@@ -1,0 +1,110 @@
+\hypertarget{_contactos_8c}{}\doxysection{D\+:/\+Temp/\+PROG-\/\+EGI/\+Aulas/\+Gere\+Contactos/\+Contactos.c File Reference}
+\label{_contactos_8c}\index{D:/Temp/PROG-\/EGI/Aulas/GereContactos/Contactos.c@{D:/Temp/PROG-\/EGI/Aulas/GereContactos/Contactos.c}}
+
+
+Lista Ligadas Simples (versão 1)  
+
+
+{\ttfamily \#include \char`\"{}Contatos.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Pessoa.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_contacto}{Contacto}} $\ast$ \mbox{\hyperlink{_contactos_8c_ab5b8db28899f335a664a19537a92eb8b}{Cria\+Contacto}} (char $\ast$desc, char $\ast$valor)
+\item 
+\mbox{\hyperlink{struct_lista_contactos}{Lista\+Contactos}} $\ast$ \mbox{\hyperlink{_contactos_8c_aa634f40e1c0c9dd6876508b68ddb5757}{Cria\+Nodo\+Lista\+Contactos}} (\mbox{\hyperlink{struct_contacto}{Contacto}} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Cria novo nodo para a Lista de Contactos Copia para o nodo da lista a informação de um contacto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_contactos}{Lista\+Contactos}} $\ast$ \mbox{\hyperlink{_contactos_8c_a401edd1ec79d30ced93daf5ed59cb940}{Insere\+Contacto\+Lista\+Contactos}} (\mbox{\hyperlink{struct_lista_contactos}{Lista\+Contactos}} $\ast$h, \mbox{\hyperlink{struct_contacto}{Contacto}} $\ast$novo\+Contacto)
+\begin{DoxyCompactList}\small\item\em Insere um novo contacto na lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_contactos_8c_a28f00c8ce79570d774c53c739b52155e}{Mostra\+Contactos}} (\mbox{\hyperlink{struct_lista_contactos}{Lista\+Contactos}} $\ast$h)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Lista Ligadas Simples (versão 1) 
+
+\begin{DoxyAuthor}{Author}
+lufer 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2022
+\end{DoxyDate}
+Metodos para manipular uma Lista Ligada Simples de Contactos \begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]No known bugs. \end{DoxyRefDesc}
+
+
+Definition in file \mbox{\hyperlink{_contactos_8c_source}{Contactos.\+c}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_contactos_8c_ab5b8db28899f335a664a19537a92eb8b}\label{_contactos_8c_ab5b8db28899f335a664a19537a92eb8b}} 
+\index{Contactos.c@{Contactos.c}!CriaContacto@{CriaContacto}}
+\index{CriaContacto@{CriaContacto}!Contactos.c@{Contactos.c}}
+\doxysubsubsection{\texorpdfstring{CriaContacto()}{CriaContacto()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_contacto}{Contacto}} $\ast$ Cria\+Contacto (\begin{DoxyParamCaption}\item[{char $\ast$}]{desc,  }\item[{char $\ast$}]{valor }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em desc} & \\
+\hline
+{\em valor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_contactos_8c_source_l00022}{22}} of file \mbox{\hyperlink{_contactos_8c_source}{Contactos.\+c}}.
+
+\mbox{\Hypertarget{_contactos_8c_aa634f40e1c0c9dd6876508b68ddb5757}\label{_contactos_8c_aa634f40e1c0c9dd6876508b68ddb5757}} 
+\index{Contactos.c@{Contactos.c}!CriaNodoListaContactos@{CriaNodoListaContactos}}
+\index{CriaNodoListaContactos@{CriaNodoListaContactos}!Contactos.c@{Contactos.c}}
+\doxysubsubsection{\texorpdfstring{CriaNodoListaContactos()}{CriaNodoListaContactos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_contactos}{Lista\+Contactos}} $\ast$ Cria\+Nodo\+Lista\+Contactos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contacto}{Contacto}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Cria novo nodo para a Lista de Contactos Copia para o nodo da lista a informação de um contacto. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c} & Novo contacto \\
+\hline
+\mbox{\texttt{ out}}  & {\em Apontador} & para nodo criado \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_contactos_8c_source_l00035}{35}} of file \mbox{\hyperlink{_contactos_8c_source}{Contactos.\+c}}.
+
+\mbox{\Hypertarget{_contactos_8c_a401edd1ec79d30ced93daf5ed59cb940}\label{_contactos_8c_a401edd1ec79d30ced93daf5ed59cb940}} 
+\index{Contactos.c@{Contactos.c}!InsereContactoListaContactos@{InsereContactoListaContactos}}
+\index{InsereContactoListaContactos@{InsereContactoListaContactos}!Contactos.c@{Contactos.c}}
+\doxysubsubsection{\texorpdfstring{InsereContactoListaContactos()}{InsereContactoListaContactos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_contactos}{Lista\+Contactos}} $\ast$ Insere\+Contacto\+Lista\+Contactos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_contactos}{Lista\+Contactos}} $\ast$}]{h,  }\item[{\mbox{\hyperlink{struct_contacto}{Contacto}} $\ast$}]{novo\+Contacto }\end{DoxyParamCaption})}
+
+
+
+Insere um novo contacto na lista. 
+
+
+
+Definition at line \mbox{\hyperlink{_contactos_8c_source_l00046}{46}} of file \mbox{\hyperlink{_contactos_8c_source}{Contactos.\+c}}.
+
+\mbox{\Hypertarget{_contactos_8c_a28f00c8ce79570d774c53c739b52155e}\label{_contactos_8c_a28f00c8ce79570d774c53c739b52155e}} 
+\index{Contactos.c@{Contactos.c}!MostraContactos@{MostraContactos}}
+\index{MostraContactos@{MostraContactos}!Contactos.c@{Contactos.c}}
+\doxysubsubsection{\texorpdfstring{MostraContactos()}{MostraContactos()}}
+{\footnotesize\ttfamily void Mostra\+Contactos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_contactos}{Lista\+Contactos}} $\ast$}]{h }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_contactos_8c_source_l00061}{61}} of file \mbox{\hyperlink{_contactos_8c_source}{Contactos.\+c}}.
+

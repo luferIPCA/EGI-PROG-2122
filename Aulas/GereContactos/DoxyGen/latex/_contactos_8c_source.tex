@@ -1,0 +1,48 @@
+\hypertarget{_contactos_8c_source}{}\doxysection{Contactos.\+c}
+\label{_contactos_8c_source}\index{D:/Temp/PROG-\/EGI/Aulas/GereContactos/Contactos.c@{D:/Temp/PROG-\/EGI/Aulas/GereContactos/Contactos.c}}
+\mbox{\hyperlink{_contactos_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_contatos_8h}{Contatos.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00012}00012 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_pessoa_8h}{Pessoa.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00013}00013 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00022}\mbox{\hyperlink{_contactos_8c_ab5b8db28899f335a664a19537a92eb8b}{00022}} \mbox{\hyperlink{struct_contacto}{Contacto}}* \mbox{\hyperlink{_contactos_8c_ab5b8db28899f335a664a19537a92eb8b}{CriaContacto}}(\textcolor{keywordtype}{char}* desc, \textcolor{keywordtype}{char}* valor) \{}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00023}00023     \mbox{\hyperlink{struct_contacto}{Contacto}}* aux = (\mbox{\hyperlink{struct_contacto}{Contacto}}*)calloc(1, \textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_contacto}{Contacto}}));}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00024}00024     strcpy(aux-\/>\mbox{\hyperlink{struct_contacto_a94b8b86f2adafcbc032607aba91b1af2}{desc}}, desc);}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00025}00025     strcpy(aux-\/>\mbox{\hyperlink{struct_contacto_a922863cd4f610b434965d7f91789b0fe}{valor}}, valor);}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00026}00026     \textcolor{keywordflow}{return} aux;}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00035}\mbox{\hyperlink{_contactos_8c_aa634f40e1c0c9dd6876508b68ddb5757}{00035}} \mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* \mbox{\hyperlink{_contactos_8c_aa634f40e1c0c9dd6876508b68ddb5757}{CriaNodoListaContactos}}(\mbox{\hyperlink{struct_contacto}{Contacto}}* c) \{}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00036}00036     \mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* novo = (\mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}*)calloc(1, \textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}));}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00037}00037     strcpy(novo-\/>\mbox{\hyperlink{struct_lista_contactos_a350d32cf054132bcb74a5597e45e6949}{contacto}}.\mbox{\hyperlink{struct_contacto_a94b8b86f2adafcbc032607aba91b1af2}{desc}}, c-\/>\mbox{\hyperlink{struct_contacto_a94b8b86f2adafcbc032607aba91b1af2}{desc}});}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00038}00038     strcpy(novo-\/>\mbox{\hyperlink{struct_lista_contactos_a350d32cf054132bcb74a5597e45e6949}{contacto}}.\mbox{\hyperlink{struct_contacto_a922863cd4f610b434965d7f91789b0fe}{valor}}, c-\/>\mbox{\hyperlink{struct_contacto_a922863cd4f610b434965d7f91789b0fe}{valor}});}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00039}00039     novo-\/>\mbox{\hyperlink{struct_lista_contactos_ad2ce521cffc2980c94d154cbb8345510}{proxContacto}} = NULL;}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00040}00040     \textcolor{keywordflow}{return} novo;}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00041}00041 \}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00046}\mbox{\hyperlink{_contactos_8c_a401edd1ec79d30ced93daf5ed59cb940}{00046}} \mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* \mbox{\hyperlink{_contactos_8c_a401edd1ec79d30ced93daf5ed59cb940}{InsereContactoListaContactos}}(\mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* h, \mbox{\hyperlink{struct_contacto}{Contacto}}* novoContacto) \{}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00047}00047     \textcolor{keywordflow}{if} (novoContacto == NULL)   \textcolor{keywordflow}{return} h;   \textcolor{comment}{//se novo está vazio}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00048}00048     \textcolor{comment}{//Cria novo nodo da lista de contactos}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00049}00049     \mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* novo = \mbox{\hyperlink{_contactos_8c_aa634f40e1c0c9dd6876508b68ddb5757}{CriaNodoListaContactos}}(novoContacto);}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00050}00050     \textcolor{keywordflow}{if} (h == NULL) h = novo;        \textcolor{comment}{//se lista está vazia}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00051}00051     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00052}00052         \textcolor{comment}{//Assumir que se insere sempre no inicio}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00053}00053         novo-\/>\mbox{\hyperlink{struct_lista_contactos_ad2ce521cffc2980c94d154cbb8345510}{proxContacto}} = h;}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00054}00054         h = novo;}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00055}00055     \}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00056}00056     \textcolor{keywordflow}{return} h;}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00057}00057 \}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00061}\mbox{\hyperlink{_contactos_8c_a28f00c8ce79570d774c53c739b52155e}{00061}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_contactos_8c_a28f00c8ce79570d774c53c739b52155e}{MostraContactos}}(\mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* h) \{}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00062}00062     \mbox{\hyperlink{struct_lista_contactos}{ListaContactos}}* aux = h;}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00063}00063     \textcolor{keywordflow}{while} (aux) \{}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00064}00064         printf(\textcolor{stringliteral}{"{}Contacto: \%s -\/ Valor: \%s\(\backslash\)n"{}}, aux-\/>\mbox{\hyperlink{struct_lista_contactos_a350d32cf054132bcb74a5597e45e6949}{contacto}}.\mbox{\hyperlink{struct_contacto_a94b8b86f2adafcbc032607aba91b1af2}{desc}}, aux-\/>\mbox{\hyperlink{struct_lista_contactos_a350d32cf054132bcb74a5597e45e6949}{contacto}}.\mbox{\hyperlink{struct_contacto_a922863cd4f610b434965d7f91789b0fe}{valor}});}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00065}00065         aux = aux-\/>\mbox{\hyperlink{struct_lista_contactos_ad2ce521cffc2980c94d154cbb8345510}{proxContacto}};}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00066}00066     \}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00068}00068 \}}
+\DoxyCodeLine{\Hypertarget{_contactos_8c_source_l00069}00069 }
+
+\end{DoxyCode}

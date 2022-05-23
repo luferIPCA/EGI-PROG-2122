@@ -21,11 +21,11 @@ Pessoa* CriaLista() {
 }
 
 /**
- * @brief .
+ * @brief Cria um nodo Pessoa
  * 
- * @param nome
- * @param nc
- * @return 
+ * @param nome	Nome da Pessoa
+ * @param nc	Número de Contribuinte
+ * @return		Pessoa
  */
 Pessoa* CriaPessoa(char* nome, int nc) {
 	Pessoa* aux = (Pessoa*)calloc(1, sizeof(Pessoa));
@@ -129,8 +129,9 @@ ListaPessoa* GetAllPessoas(char* fileName) {
 	ListaPessoa* aux;
 	Pessoa p;
 
-	if ((fp = fopen(fileName, "rb")) == NULL) return NULL;
-	while (fread(&p, sizeof(p), 1, fp)) {
+	if ((fp = fopen(fileName, "rb")) == NULL) 
+		return NULL;
+	while (fread(&p, sizeof(p), 1, fp)) {//!feof(fp)
 		if (ProcuraPessoa(h, p.nc) == NULL) {//se pessoa ainda não está em memória
 			aux = CriaNodoListaPessoas(&p);
 			h = InserePessoaListaPessoas(h, aux);
@@ -151,12 +152,13 @@ ListaPessoa* GetAllPessoas(char* fileName) {
 bool SavePessoas(ListaPessoa* h, char* fileName) {
 	if (h == NULL) return false;
 	FILE* fp;
-
-	if ((fp = fopen(fileName, "wb")) == NULL) return false;
+	if ((fp = fopen(fileName, "wb")) == NULL) 
+		return false;
 	ListaPessoa* aux = h;
 	while (aux) {
-		fwrite(&aux->fichaPessoa, sizeof(aux->fichaPessoa), 1, fp);
+		fwrite(&aux->fichaPessoa, sizeof(Pessoa), 1, fp);
 		aux = aux->proxPessoa;
+
 	}
 	fclose(fp);
 	return true;
@@ -171,10 +173,12 @@ bool SavePessoas(ListaPessoa* h, char* fileName) {
  * @return 
  */
 bool SaveAll(ListaPessoa* h, char* fileName) {
-	if (h == NULL) return false;
+	if (h == NULL) 
+		return false;
 	FILE* fp;
 
-	if ((fp = fopen(fileName, "wb")) == NULL) return false;
+	if ((fp = fopen(fileName, "wb")) == NULL) 
+		return false;
 
 	//grava n registos no ficheiro
 	ListaPessoa* aux = h;
@@ -199,14 +203,16 @@ bool SaveAll(ListaPessoa* h, char* fileName) {
 /**
 * Carrega todos os contactos para cada Pessoa
 */
-ListaPessoa* GetAll(char* fileName, ListaPessoa* h) {
+ListaPessoa* GetAllContacts(char* fileName, ListaPessoa* h) {
 	FILE* fp;
 	ListaPessoa* aux = h;
 	Pessoa p;
 
 	if (h == NULL) return NULL;
 
-	if ((fp = fopen(fileName, "rb")) == NULL) return NULL;
+	if ((fp = fopen(fileName, "rb")) == NULL) 
+		return NULL;
+
 	TodaInformacaoPessoa auxFile;
 	while (fread(&auxFile, sizeof(auxFile), 1, fp)) {
 		//aux = ProcuraPessoa(h, auxFile.nc);
